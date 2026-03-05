@@ -454,6 +454,7 @@ Test Cases:
                 json.dump(results, f, indent=4)
 
     # calculate statistics
+    # pass@k计算
     total_num = len(results)
     pass_at_1 = sum([r["passat1"] for r in results]) / total_num if total_num > 0 else 0
 
